@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
- * get_flags - Calculates active flags for the code
- * @format: Formatted string in which to print the arguments
- * @i: take a parameter.
- * Return: Flags:
+ * get_flags - calc the active flags
+ * @format: formatted string in which to print the argument
+ * @i: takes a param
+ * Return: flags
  */
 int get_flags(const char *format, int *i)
 {
-	/* - + 0 # ' ' */
-	/* 1 2 4 8  16 */
 	int j, curr_i;
 	int flags = 0;
 	const char FLAGS_CH[] = {'-', '+', '0', '#', ' ', '\0'};
